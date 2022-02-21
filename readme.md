@@ -1,3 +1,6 @@
+<h1>CSC 332 - Project #1</h1>
+
+**Echo Hsiao and Raniery Mendes**
 **Project Development**
 
 To be able to develop our project prototype we relied mostly on two &quot;tutorials&quot;/repositories one from the Arduino Project Hub and another one from the Arduino Get Started platform. Respectively, the [Arduino RFID Servo Box](https://create.arduino.cc/projecthub/arcaegecengiz/arduino-rfid-servo-box-4361f1) and the [​​Arduino - RFID/NFC - Servo Motor.](https://arduinogetstarted.com/tutorials/arduino-rfid-nfc-servo-motor) While the latter assisted us with our initial idea of using an RFID reader as our sensor together with a servo motor as our major actuator, the former was critical to helping us design our prototype as well as figure out how we could use a servo motor as a locker. Furthermore, we point out that we also utilized some of the information provided by a tutorial on the [Random Nerd portal](https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/), so that we could better comprehend how to use an RFID reader, particularly the MFRC522.
