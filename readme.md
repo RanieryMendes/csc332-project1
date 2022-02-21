@@ -18,7 +18,7 @@ Here is a full demonstration of how our prototype works:
 
 Moreover, in order to show the goal of our project, we decided to only add the tag&#39;s UID as an authorized tag. By doing that we aimed to demonstrate the safety aspect behind our locker, that is, only the person who is supposed to have access to the box/locker will be able to unlock it. Other cards or tags will fail to do so. Below there is a mini demo of this.
 
-<img src="https://media2.giphy.com/media/o0VWbuOrWNtTScJSEf/giphy.gif?cid=790b76114255e5e4e616b2d8a55b063a35b35abe9f1039b0&rid=giphy.gif&ct=g" width="200" height="400" />
+<img src="https://media.giphy.com/media/o0VWbuOrWNtTScJSEf/giphy-downsized-large.gif" width="200" height="400" />
 
 **Issues and Future Improvements**
 
