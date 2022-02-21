@@ -1,10 +1,12 @@
-To be able to develop our project prototype we relied mostly on two &quot;tutorials&quot;/repositories one from the Arduino Project Hub and another one from the Arduino Get Started platform. Respectively, the [Arduino RFID Servo Box](https://create.arduino.cc/projecthub/arcaegecengiz/arduino-rfid-servo-box-4361f1) and the[​​Arduino - RFID/NFC - Servo Motor.](https://arduinogetstarted.com/tutorials/arduino-rfid-nfc-servo-motor) While the latter assisted us with our initial idea of using an RFID reader as our sensor together with a servo motor as our major actuator, the former was critical to helping us design our prototype as well as figure out how we could use a servo motor as a locker. Furthermore, we point out that we also utilized some of the information provided by a tutorial on the [Random Nerd portal](https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/), so that we could better comprehend how to use an RFID reader, particularly the MFRC522.
+**Project Development**
+
+To be able to develop our project prototype we relied mostly on two &quot;tutorials&quot;/repositories one from the Arduino Project Hub and another one from the Arduino Get Started platform. Respectively, the [Arduino RFID Servo Box](https://create.arduino.cc/projecthub/arcaegecengiz/arduino-rfid-servo-box-4361f1) and the [​​Arduino - RFID/NFC - Servo Motor.](https://arduinogetstarted.com/tutorials/arduino-rfid-nfc-servo-motor) While the latter assisted us with our initial idea of using an RFID reader as our sensor together with a servo motor as our major actuator, the former was critical to helping us design our prototype as well as figure out how we could use a servo motor as a locker. Furthermore, we point out that we also utilized some of the information provided by a tutorial on the [Random Nerd portal](https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/), so that we could better comprehend how to use an RFID reader, particularly the MFRC522.
 
 Diving into the devices and pieces of equipment, we used a medium-size breadboard, an Arduino board, a servo motor, an RFID sensor module (Mifare RC522), some wires, an NFC ta two LED lights, a small cardboard box, and a piece of colored Cardstock.
 
 Pictures of our prototype:
 
-<img src="./prot_2.PNG" width="1000" height="2000" /> <img src="./prot_1.JPG" width="200" height="400" />
+<img src="./prot_2.PNG" width="400" height="600" /> <img src="./prot_1.JPG" width="400" height="600" />
 
 Moving into the logic and coding section of our project, first of all, we had to download and install the MFRC522 library into our Arduino to be able to connect and use the RFID sensor. Thanks to that we could run one of the simple example sketches available in that library to obtain the NFC tag&#39;s UID, which would be later used in our prototype. Since we were working with a servo motor and that RFID sensor we had to include the following header files in our code: SPI.h; MFRC522.h; and Servo.h.
 
@@ -14,11 +16,11 @@ Interestingly, we opted for maintaining a suggestion from the tutorial that reco
 
 Here is a full demonstration of how our prototype works:
 
-<img src="https://media2.giphy.com/media/ZXDbIUMmb6csug0OtJ/giphy.gif?cid=790b76112d06ef1d1106e01a5ff8c2137b969d61d7028806&rid=giphy.gif&ct=g" width="200" height="400" />
+<img src="https://media2.giphy.com/media/ZXDbIUMmb6csug0OtJ/giphy.gif?cid=790b76112d06ef1d1106e01a5ff8c2137b969d61d7028806&rid=giphy.gif&ct=g" width="500" height="800" />
 
 Moreover, in order to show the goal of our project, we decided to only add the tag&#39;s UID as an authorized tag. By doing that we aimed to demonstrate the safety aspect behind our locker, that is, only the person who is supposed to have access to the box/locker will be able to unlock it. Other cards or tags will fail to do so. Below there is a mini demo of this.
 
-<img src="https://media.giphy.com/media/o0VWbuOrWNtTScJSEf/giphy-downsized-large.gif" width="200" height="400" />
+<img src="https://media.giphy.com/media/o0VWbuOrWNtTScJSEf/giphy-downsized-large.gif" width="500" height="800" />
 
 **Issues and Future Improvements**
 
