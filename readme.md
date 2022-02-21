@@ -4,9 +4,9 @@ Diving into the devices and pieces of equipment, we used a medium-size breadboar
 
 Pictures of our prototype:
 
-![](RackMultipart20220221-4-1m6yfgb_html_f1de06ea22fb93cf.jpg) ![](RackMultipart20220221-4-1m6yfgb_html_b30f619e8937be5d.png)
+<img src="./prot_2.PNG" width="1000" height="2000" /> <img src="./prot_1.JPG" width="200" height="400" />
 
-Moving into the logic and coding section of our project, first of all, we had to download and install the MFRC522 library into our Arduino to be able to connect and use the RFID sensor. Thanks to that we could run one of the simple example sketches available in that library to obtain the NFC tag&#39;s UID, which would be later used in our prototype. Since we were working with a servo motor and that RFID sensor we had to include the following header files in our code: \&lt;SPI.h\&gt;; \&lt;MFRC522.h\&gt;; and \&lt;Servo.h\&gt;.
+Moving into the logic and coding section of our project, first of all, we had to download and install the MFRC522 library into our Arduino to be able to connect and use the RFID sensor. Thanks to that we could run one of the simple example sketches available in that library to obtain the NFC tag&#39;s UID, which would be later used in our prototype. Since we were working with a servo motor and that RFID sensor we had to include the following header files in our code: SPI.h; MFRC522.h; and Servo.h.
 
 The way our code and prototype works is that our loop keeps trying to sensor(find) a new card/tag to read, once it finds that, the program verifies whether it is a tag or card, whose UID is authorized or not. If it is, it will check the servo motor&#39;s current angle value, which in our case translates into the box being locked or unlocked, and perform the update of such value to change the angle value of the servo motor. It is important to note that, along with the servo motor action, the authorized UID also translates into the switching of LEDs on, that is, when the box is locked the green LED is off while the red one is on, while when the box is unlocked the opposite occurs.
 
